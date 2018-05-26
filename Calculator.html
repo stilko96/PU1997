@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+</head>
+<body>
+<div id="foobar" style="position:absolute;top:5%;left:31.6%;width:20%;height:5%;z-index:1;" onmouseout="changeop()" onmouseover="changeop1()">
+</div>
+<div id="foobar1" style="position:absolute;top:5%;left:50.4%;width:20%;height:5%;z-index:1;"onmouseout="changeop()" onmouseover="changeop1()">
+  
+</div>
+<div id="foobar2" style="position:absolute;left:30%;width:40%;height:65%;border:1px solid black;text-align:center" onmouseout="changeop()" onmouseover="changeop1()">
+Приходи:<input type="text" name="p">
+Разходи:<input type="text" name="r"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+Данък:<input type="text" id="r1" readonly>
+Печалба:<input type="text" id="r2" readonly><br><br>
+<button onclick="sum()" id="g1"> Данък</button>
+<button onclick="sum1()" id="g2"> Печалба</button>
+<button onclick="add()"> Добави поле</button>
+<div>
+<script>
+function changeop(){
+		document.getElementById("foobar2").style.opacity = "0.5";
+		document.getElementById("foobar1").style.opacity = "0.5";
+		document.getElementById("foobar").style.opacity = "0.5";
+		}
+		function changeop1(){
+		document.getElementById("foobar2").style.opacity = "1";
+		document.getElementById("foobar1").style.opacity = "1";
+		document.getElementById("foobar").style.opacity = "1";
+		}
+function sum() {
+document.getElementById("g1").style.border="2px solid black";
+document.getElementById("g1").style.backgroundColor="yellow";
+	var x = document.getElementsByName("p");
+	var x1= document.getElementsByName("r");
+    var sum = 0;
+	var sum2 = 0;
+	
+    for( var i = 0; i < x.length; i ++ ) {
+	if (isNaN(x[i].value) || x[i].value=="") {
+   alert('Моля попълнете всички полета.Използвайте само числа!!!');
+   break;
+   }
+        sum =sum + parseInt(x[i].value);
+        
+    }
+	 for( var k = 0; k < x1.length; k ++ ) {
+	 if (isNaN(x1[k].value) || x1[k].value=="") {
+   alert('Моля попълнете всички полета.Използвайте само числа!!!');
+      break;
+   }
+        sum2 =sum2 + parseInt(x1[k].value);
+        
+    }
+	 var result = ((sum-sum2)*20)/100;
+    if (!isNaN(result)) {
+          document.getElementById("r1").value=result;
+       }
+	   }
+function sum1() {
+document.getElementById("g2").style.border="2px solid black";
+document.getElementById("g2").style.backgroundColor="green";
+	var x = document.getElementsByName("p");
+	var x1= document.getElementsByName("r");
+	var x2 = document.getElementById('r1').value;
+    var sum = 0;
+	var sum2 = 0;
+	
+	if (x2=="" || x2=="0") {
+   alert('Моля първо намерете данъка!!!');
+   }
+    for( var i = 0; i < x.length; i ++ ) {
+	if (isNaN(x[i].value) || x[i].value=="") {
+   alert('Моля попълнете всички полета.Използвайте само числа!!!');
+   break;
+   }
+        sum =sum + parseInt(x[i].value);
+        
+    }
+	 for( var k = 0; k < x1.length; k ++ ) {
+	  if (isNaN(x1[k].value) || x1[k].value=="") {
+   alert('Моля попълнете всички полета.Използвайте само числа!!!');
+   break;
+   }
+        sum2 =sum2 + parseInt(x1[k].value);
+        
+    }
+	 var result = ((sum-sum2))-parseInt(x2);
+    if (!isNaN(result)) {
+          document.getElementById("r2").value=result;
+       }
+	   }
+   	      var max = 11;
+    var current = 0;
+   function add() {
+
+if(current < max){
+current++;
+var element = document.createElement("input");
+var element2 = document.createElement("input");
+
+
+   var label = document.createElement("Label");
+label.innerHTML = "Приходи:";
+   var label2 = document.createElement("Label");
+label2.innerHTML = "Разходи:";    
+
+
+element.setAttribute("type", "text");
+element.setAttribute("value", "");
+element.setAttribute("style", "margin-bottom:20px");
+element.setAttribute("name", "p");
+
+element2.setAttribute("type", "text");
+element2.setAttribute("value", "");
+element2.setAttribute("style", "margin-bottom:20px");
+element2.setAttribute("name", "r");
+
+
+
+
+
+
+var foo = document.getElementById("foobar");
+var foo1 = document.getElementById("foobar1");
+
+foo.appendChild(label);
+foo.appendChild(element);
+foo1.appendChild(label2);
+foo1.appendChild(element2);
+
+
+ }
+
+}
+ function delete_input(feld){ 
+        if(current > 0){
+            current--;
+            feld.parentNode.parentNode.removeChild(feld.parentNode);
+        }
+		}
+		
+</script>
+</body>
+</html>
