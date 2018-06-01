@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+
+<title>Document</title>
+<link rel="stylesheet" href="zadanie7style.css" type="text/css">
+
+</head>
+
+<body>
+<div class="container">
+<div class="header">
+<i><h1>ЗАДАЧИ</h1></i>
+</div>
+<div class="content"></div>
+<div class="Q-1">
+<p class="question1">1. Подредете в азбучен ред</p>
+	<ul>
+		<li id="q1drap1" class="drag" draggable="true" ondragstart="drag(event)" value="1">Иван</li>
+		<li id="q1drag2" class="drag" draggable="true" ondragstart="drag(event)" value="2">Христо</li>
+		<li id="q1drag3" class="drag" draggable="true" ondragstart="drag(event)" value="3">Петър</li>
+		<li id="q1drag4" class="drag" draggable="true" ondragstart="drag(event)" value="4">Георги</li>
+	</ul>
+<div class="q1drop1" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+<div class="q1drop2" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+<div class="q1drop3" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+<div class="q1drop4" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+
+ 
+
+</div>
+<div class="Q-2">
+
+<p class="question2">2. Допълнете изречението<p>
+	<ul>
+		<li id="q2drag1" class="drag" draggable="true" ondragstart="drag(event)" value="EU">ЕС</li>
+		<li id="q2drag2" class="drag" draggable="true" ondragstart="drag(event)" value="Sofia">София</li>
+	</ul>
+<span class="flex">
+	
+<span class="flex">
+<div class="q2drop1" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+ е столица на България, а България е част от 
+</span>
+<span class="flex">
+<div class="q2drop2" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+</span>
+
+</span>
+</div>
+</div>
+
+<div class="Q-3">
+
+<p class="question3">3. Коя от фигурите е квадрат?(натиснете я)</p>
+
+<p id="answer"></p>
+
+<span class="flex">
+
+<svg id="figure1" style="fill:black;" onclick="Circle()" height="100" width="100">
+<circle cx="50" cy="50" r="40" /></svg> 
+
+<svg id="figure2" style="fill:black;"onclick= "Square()" width="110" height="110">
+<rect width="100" height="100" /></svg>
+
+<svg id="figure3" style="fill:black;" onclick="Rectangle()" width="260" height="110">
+<rect width="300" height="100" /></svg>
+</span>
+
+<div class="Q-4">
+
+<p class="question 4">4. 16*16 = ?</p>
+
+<p id="answer1"></p>
+
+<input type="text" id="input1" />
+
+<button onclick="submit()">Проверка</button>
+
+
+</div>
+<div class="Q-5">
+
+<p class="question 5">5. Коя е столицата на Турция =? </p>
+<p id="answer2"></p>
+<form class="radio">
+<input type="radio" name="capital" id="capital1" value="1">Солун<br>
+<input type="radio" name="capital" id="capital2" value="2">Кабул<br>
+<input type="radio" name="capital" id="capital3" value="3">Инстанбул<br>
+<input type="radio" name="capital" id="capital4" value="4">Анкара<br>
+&nbsp;
+</form>
+<button onclick="submit2()">Проверка</button>
+
+</div>
+<div class="Q-6">
+
+<p class="question 6 ">6.Кой щат е част от САЩ </p>
+<p id="answer3"></p>
+<form class="checkbox">
+<input type="checkbox" name="state" id="state1" value="5">Вашингтон<br>
+<input type="checkbox" name="state" id="state2" value="6">Нови Южен Уелс<br>
+<input type="checkbox" name="state" id="state3" value="7">Аляска<br>
+<input type="checkbox" name="state" id="state4" value="8">Куйнсланд<br>
+&nbsp;
+</form>
+<button onclick="submit3()">Проверка</button>
+
+</div>
+</div>
+
+<div class="footer">
+<p> Copyright</p>
+</div>
+
+<script src="zadanie7script.js"></script>
+</body>
+
+</html>
