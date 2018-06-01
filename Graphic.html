@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="menu.css">
+     <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+<img src="adv.jpg" class="animated rollIn" width="300" height="300" style="position:fixed;left:1540px;top:200px;">
+	<div id="container" style="width:100%;height:100%;">
+	<div id="header" style="background-color:#E6E6FA;height:15%;width:100%;text-align:center;"><img src="sport.png" width="200"></div>
+	<div id="menu" style="background-color:	#FF6347;height:780px;width:190px;float:left;text-align:center;">
+	<ul>
+	<li class="dropdown1 lii"><a class="aa" href="main.html" >За фирмата</a>
+	<div class="dropdown-content" style="top:22.9%;"> <a  href="Partniori.html">Партниори</a><br> <a  href="graphic.html">Развитие</a></div>
+	</li>
+	    <li class="dropdown1 lii"><a class="aa" href="cv.html" >За собствениците</a>
+                <div class="dropdown-content" style="top:28.2%"> <a  href="cv.html">CV</a><br>  <a  href="movie.html">Любим филм</a> <br> <a  href="song.html">Любими песни</a></div>
+            </li>
+	<li class="lii"><a href="gallery.html">Продукти</a></li>
+	<li class="lii"><a href="orders.html">Поръчки</a></li>
+	<li class="lii"><a href="opinions.html">Мнения</a></li>
+	</ul></div>
+	<div id="content" style="background-color:#E6E6FA;height:780px;;width:1507px;float:left;">
+	<br><br>
+	<h1 align="center" >Графика  на приходите през годината<h1> <br>
+	<canvas id="myCanvas" width="800" height="600" style="border:1px solid #000000;background-color:white;  position:absolute; left:545px; top:350px;"></canvas>
+<script>
+     var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      context.beginPath();
+      context.moveTo(120, 180);
+      context.lineTo(120, 550);
+      context.lineWidth = 30;
+	   context.strokeStyle="#FFC1C1";
+      context.stroke();
+	    context.beginPath();
+      context.moveTo(170, 300);
+      context.lineTo(170, 550);
+      context.lineWidth = 30;
+	   context.strokeStyle="#8E8E38";
+      context.stroke();
+	  	    context.beginPath();
+      context.moveTo(220, 240);
+      context.lineTo(220, 550);
+      context.lineWidth = 30;
+	   context.strokeStyle="#7171C6";
+      context.stroke();
+	  	    context.beginPath();
+      context.moveTo(270, 120);
+      context.lineTo(270, 550);
+      context.lineWidth = 30;
+	   context.strokeStyle="#EED5D2";
+      context.stroke();
+	  	    context.beginPath();
+      context.moveTo(320, 420);
+      context.lineTo(320, 550);
+      context.lineWidth = 30;
+	   context.strokeStyle="#EE4000";
+      context.stroke();
+	  	    context.beginPath();
+      context.moveTo(370, 80);
+      context.lineTo(370, 550);
+      context.lineWidth = 30;
+	   context.strokeStyle="#FF8C00";
+      context.stroke();
+	  	    context.beginPath();
+      context.moveTo(420, 360);
+      context.lineTo(420, 550);
+      context.lineWidth = 30;
+	   context.strokeStyle="#FFF68F";
+      context.stroke();
+	  	    context.beginPath();
+      context.moveTo(470, 230);
+      context.lineTo(470, 550);
+      context.lineWidth = 30;
+	   context.strokeStyle="#C1CDC1";
+      context.stroke();
+	  	    context.beginPath();
+      context.moveTo(520, 140);
+      context.lineTo(520, 550);
+      context.lineWidth = 30;
+	   context.strokeStyle="#00FA9A";
+      context.stroke();
+	  	    context.beginPath();
+      context.moveTo(570, 480);
+      context.lineTo(570, 550);
+      context.lineWidth = 30;
+	   context.strokeStyle="#40E0D0";
+      context.stroke();
+	  	    context.beginPath();
+      context.moveTo(620, 410);
+      context.lineTo(620, 550);
+      context.lineWidth = 30;
+	  context.strokeStyle="#BBFFFF";
+      context.stroke();
+	  	    context.beginPath();
+      context.moveTo(670, 340);
+      context.lineTo(670, 550);
+      context.lineWidth = 30;
+	  context.strokeStyle="#4876FF";
+      context.stroke();
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.fillText("Я",107,580);
+ctx.font = "30px Arial";
+ctx.fillText("Ф",157,580);
+ctx.font = "30px Arial";
+ctx.fillText("М",207,580);
+ctx.font = "30px Arial";
+ctx.fillText("А",257,580);
+ctx.font = "30px Arial";
+ctx.fillText("М",307,580);
+ctx.font = "30px Arial";
+ctx.fillText("Ю",357,580);
+ctx.font = "30px Arial";
+ctx.fillText("Ю",407,580);
+ctx.font = "30px Arial";
+ctx.fillText("А",457,580);
+ctx.font = "30px Arial";
+ctx.fillText("С",507,580);
+ctx.font = "30px Arial";
+ctx.fillText("О",557,580);
+ctx.font = "30px Arial";
+ctx.fillText("Н",607,580);
+ctx.font = "30px Arial";
+ctx.fillText("Д",657,580);
+ctx.font = "10px Arial";
+ctx.fillText("4000",657,330);
+ctx.font = "10px Arial";
+ctx.fillText("2200",607,400);
+ctx.font = "10px Arial";
+ctx.fillText("1000",557,470);
+ctx.font = "10px Arial";
+ctx.fillText("6300",507,130);
+ctx.font = "10px Arial";
+ctx.fillText("5100",457,220);
+ctx.font = "10px Arial";
+ctx.fillText("3900",407,350);
+ctx.font = "10px Arial";
+ctx.fillText("6900",357,70);
+ctx.font = "10px Arial";
+ctx.fillText("2000",307,410);
+ctx.font = "10px Arial";
+ctx.fillText("6500",257,110);
+ctx.font = "10px Arial";
+ctx.fillText("5000",207,230);
+ctx.font = "10px Arial";
+ctx.fillText("4500",157,290);
+ctx.font = "10px Arial";
+ctx.fillText("5700",107,170);
+</script>
+</div>
+	<div id="news" style="background-color:#FF6347;height:780px;width:173px;float:left;"><b>Новини </b></div>
+	<div id="footer" style="background-color:red;clear:both;height:6%;width:100%;text-align:center;">Copyright © Stiliyan Avramov</div></div>
+
+</div>
+</body>
+</html>
