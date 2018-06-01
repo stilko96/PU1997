@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+	<div id="container" style="height:100%;">
+	<div id="header" style="background-color:#E6E6FA;height:15%;width:100%;text-align:center;"><img src="sport.png" width="200"></div>
+	<div id="menu" style="background-color:	#FF6347;height:79%;width:10%;float:left;">
+	<br>За фирмата<br> 
+	<a href="cv.html">За собственика</a><br>
+	Продукти<br><a href="orders.html"> Поръчки</a><br> <a href="opinions.html">Мнения</a>  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br><br></div>
+	<div id="content" style="background-color:#E6E6FA;height:79%;width:80%;float:left;">
+<h1 style="text-align:center;" >Мнения</h1>
+<p style="text-align:center;">
+<form action="mailto:stilko96@abv.bg" method="post" align="center">
+			<b>изберете продукт:</b><br>
+            <select name="stoki" >
+                <option value="topka">Топка</option>
+                <option value="maratonki">Маратонки</option>
+                <option value="ekip">Екип</option>
+                <option value="tenis raketa">Тенис ракета</option>
+                <option value="golf stik">Голф стик</option>
+                <option value="hilka">Хилка</option>
+                <option value="butonki">Бутонки</option>
+            </select>
+			   <br>
+            <br>
+            <textarea name="message" rows="10" cols="30" placeholder="Дайте вашето мнение" maxlength="300" required></textarea>
+            <br>
+			<b>Оценете продукта:</b><br><br>
+			<input type="radio" name="rating" value="nestava"  checked> Не става&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<br>
+            <input type="radio" name="rating" value="nedobur"> Недостатъчно добър<br>
+            <input type="radio" name="rating" value="dobyr">Добър&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<br>
+			<input type="radio" name="rating" value="mnogo dobyr">Много добър&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<br>
+			<input type="radio" name="rating" value="unikalen">Уникален&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<br><br>
+            <input type="submit" value="Подай">
+            <button type="reset" value="Reset">Изчисти</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp </div>
+					<div id="news" style="background-color:#FF6347;height:79%;width:10%;float:left;"><b>Новини   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></b></div>
+		<div id="footer" style="background-color:red;height:6%;clear:both;width:100%;text-align:center;">Copyright © Stiliyan Avramov</div></div>
+
+</div>
+</body>
+</html>
