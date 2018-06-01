@@ -1,0 +1,37 @@
+﻿.q1drop1,
+.q1drop2,
+.q1drop3,
+.q1drop4 {
+width: 15%;
+height: 20px;
+padding: 10px;
+border: 1px solid black;
+}
+
+.q2drop1,
+.q2drop2,
+.q2drop3,
+.q2drop4 {
+width: 150px;
+height: 20px;
+padding: 10px;
+border: 1px solid black;
+
+}
+
+.flex {
+display: flex;
+align-items: center;
+
+
+}
+
+#figure1,
+#figure2,
+#figure3 {
+
+display: flex;
+margin: 5%;
+
+
+}
